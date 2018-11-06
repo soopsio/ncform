@@ -21,7 +21,7 @@ class AjaxRule extends ValidationRule {
     };
 
     let options = _merge({ params: {} }, defConfig, ruleVal);
-
+    console.log(defConfig, ruleVal);
     options.params[options.paramName] = val;
     Object.assign(options.params, options.otherParams);
 
